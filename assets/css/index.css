@@ -1,0 +1,41 @@
+@font-face {
+    font-family:pixel ;
+    src: url(/assets/fonts/IPix中文像素字体.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fbfbfb;
+    font-family: pixel;
+}
+main{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.box1{
+    padding-top: 30vh;
+    background-image: url(/assets/img/bg1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0px -40px;
+    -webkit-background-clip: text;
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.title{
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+	-webkit-text-fill-color: transparent;
+}
+.title:hover{
+    font-size: 300px;
+}
