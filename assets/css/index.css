@@ -4,6 +4,14 @@ body{
     background-color: #fbfbfb;
     font-family: Consolas,Lucida Console,'Courier New',monospace,'Times New Roman',Cambria ,Georgia;
 }
+::selection{
+    transition: .7s;
+    background-color: #fafafa;
+    text-shadow:0.027em 0.027em 0.01em #fbfbfb, 0.04em 0.04em 0.1em black;
+    color: #fbfbfb;
+
+
+}
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -11,7 +19,6 @@ body{
     border-radius: 10px; 
     background-color: rgba(1, 1, 1, .2);
 }
-
 main{
     scroll-snap-type: y mandatory;
     overflow: scroll;
@@ -27,6 +34,7 @@ main{
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    border-top: 1px solid #dddddd
 }
 .title{
     font-size: 100px;
@@ -41,6 +49,51 @@ main{
 }
 .title:hover{
     transform: scale(1,1);
-    letter-spacing: 70px;
-    background-color: white;
+    letter-spacing: 100px;
+    /* background-color: white; */
+}
+.desc{
+    position: relative;
+    bottom: -55vh;
+    display: inline-block;
+    width: 520px;
+    font-weight: 100;
+    font-family: 微软雅黑;
+    letter-spacing: 7px;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: corr 10s steps(37) 2s infinite normal both,
+    rbor 600ms steps(37) infinite normal both;
+}
+@keyframes rbor {
+    from{border-right-color: black;}
+    to{border-right-color: transparent;}
+}
+@keyframes corr {
+    0%{width: 0px;}
+    30%{width:520px}
+    80%{width:520px}
+    90%{width: 0px;}
+    100%{width: 0px;}
+}
+.droparrow{
+    position: relative;
+    bottom: -79vh;
+    font-size: 30px;
+    color: black;
+    
+}
+.droparrow i{
+    position: relative;
+    animation: droparrowa 0.6s ease-out 0s infinite alternate both ;
+    cursor: pointer;
+}
+@keyframes droparrowa {
+    from{color: rgba(0, 0, 0, .3); bottom: 0px;}
+    to{color: rgba(0, 0, 0, .8); bottom: 15px;}
+}
+
+.box2{
+    
 }
