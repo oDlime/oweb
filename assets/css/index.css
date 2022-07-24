@@ -69,6 +69,22 @@ main{
     animation: corr 10s steps(37) 2s infinite normal both,
     rbor 600ms steps(37) infinite normal both;
 }
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+    .title{
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+    .title:hover{
+        transform: scale(1,1);
+        letter-spacing: 20px;
+    }
+    .desc{
+        font-size: 10px;
+        letter-spacing: 4px;
+        animation: corr2 10s steps(37) 2s infinite normal both,
+        rbor 600ms steps(37) infinite normal both;
+    }
+}
 @keyframes rbor {
     from{border-right-color: black;}
     to{border-right-color: transparent;}
@@ -77,6 +93,13 @@ main{
     0%{width: 0px;}
     30%{width:520px}
     80%{width:520px}
+    90%{width: 0px;}
+    100%{width: 0px;}
+}
+@keyframes corr2 {
+    0%{width: 0px;}
+    30%{width:310px}
+    80%{width:310px}
     90%{width: 0px;}
     100%{width: 0px;}
 }
