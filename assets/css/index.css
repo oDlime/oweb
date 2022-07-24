@@ -54,7 +54,6 @@ main{
 .title:hover{
     transform: scale(1,1);
     letter-spacing: 100px;
-    /* background-color: white; */
 }
 .desc{
     position: relative;
