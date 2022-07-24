@@ -5,12 +5,9 @@ body{
     font-family: Consolas,Lucida Console,'Courier New',monospace,'Times New Roman',Cambria ,Georgia;
 }
 ::selection{
-    transition: .7s;
-    background-color: #fafafa;
-    text-shadow:0.027em 0.027em 0.01em #fbfbfb, 0.04em 0.04em 0.1em black;
-    color: #fbfbfb;
-
-
+    background-color: #eeeeee;
+    text-shadow:-0.03em -0.03em 0.15em #ededed, 0.03em 0.03em 0.15em black;
+    color: #ededed;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -46,6 +43,9 @@ main{
     transition: 0.7s;
     transition-delay: 0.5s;
     letter-spacing: 50px;
+    background-color: #fbfbfb;
+    text-shadow:0.03em 0.03em 0.02em #858585, 0.04em 0.04em 0.1em black;
+    color: #fafafa;
 }
 .title:hover{
     transform: scale(1,1);
