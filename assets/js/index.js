@@ -16,7 +16,7 @@ window.onload = function(){
             error:function(err){
                 console.log("请求失败")
                 console.log(err)
-            }//失败的回调1
+            }//失败的回调2
         });
     })
 }
