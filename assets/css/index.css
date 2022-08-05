@@ -139,7 +139,7 @@ main{
     border-radius: 10px;
     transition: .3s;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0),
-    inset 5px 5px 20px rgba(0, 0, 0, 0.5),inset -5px -5px 3px rgba(255, 255, 255, .4);
+    inset 5px 5px 20px rgba(0, 0, 0, 0.5),inset -5px -5px 3px rgba(255, 255, 255, .2);
     background-size: 103%;
     
 }
@@ -164,4 +164,33 @@ main{
 }
 .item2 .i4{
     background-image: url(/assets/img/f_f_object_20_s256_f_object_20_1bg.png);
+}
+.show{
+    width: 70vw;
+    height: 80vh;
+    margin: 8vh auto;
+    border-radius: 20px;
+    background-size: 120%;
+    background-position: 50% 100%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0),
+    inset 5px 5px 20px rgba(0, 0, 0, 0.5),inset -5px -5px 3px rgba(255, 255, 255, .4);
+    text-align: center;
+}
+.show .items{
+    display: inline-block;
+    height: 60%;
+    width: 20%;
+    background-color: #fbfbfb;
+    margin: 10% 4%;
+    border-radius: 20px;
+    /* float: inline-start; */
+    transition: .3s;
+    transition-delay: .3s;
+    border: 1px rgba(100, 100, 100, .2) solid;
+}
+.show .items:hover{
+    box-shadow:5px 5px 3px #d1d1d1, 8px 8px 18px rgba(0, 0, 0, .7), 2px 2px 2px #000000;
+    border: 1px rgba(255, 255, 255, 1) solid;
+    transform: translateX(-5px) translateY(-5px);
+    transform: scaleX(1.04) scaleY(1.04);
 }
